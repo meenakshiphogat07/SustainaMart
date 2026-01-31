@@ -14,10 +14,10 @@ const OurPolicy = () => {
      <p className='font-semibold'> 7 Days Return  Policy </p>
      <p className='text-gray-400'> We provide 7 days return policy</p>
       </div>
-       <div>
+       <div> 
         <img src={assets.support_img} className='w-12 m-auto mb-5' alt=""/>
      <p className='font-semibold'>Best customer support </p>
-     <p className='text-gray-400'> We offer 24/7 customer support</p>
+     <p className='text-gray-400'> We offer  24/7 customer support</p>
       </div>
 
     </div>
