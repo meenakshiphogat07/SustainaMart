@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+import React from 'react'
+
+const Collection = () => {
+  return (
+    <div>
+      
+=======
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import dropdown_icon from '../assets/dropdown_icon.png'
@@ -126,6 +134,7 @@ const Collection = () => {
         </div>
 
       </div>
+>>>>>>> upstream/main
     </div>
   )
 }

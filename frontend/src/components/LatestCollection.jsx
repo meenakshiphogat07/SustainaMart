@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+import React from 'react'
+
+const LatestCollection = () => {
+  return (
+    <div>LatestCollection</div>
+  )
+}
+
+export default LatestCollection
+=======
 import React, { useEffect, useState } from 'react'
 import { useContext } from 'react'
 import { ShopContext } from '../context/ShopContext'
@@ -32,3 +43,4 @@ const LatestCollection = () => {
 };
 
     export default LatestCollection
+>>>>>>> upstream/main
