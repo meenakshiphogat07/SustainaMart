@@ -10,24 +10,15 @@ import PlaceOrder from './pages/PlaceOrder'
 import Contact from './pages/Contact'
 import Orders from './pages/Orders'
 import Navbar from './components/Navbar'
-<<<<<<< HEAD
-=======
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
->>>>>>> upstream/main
 
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
-<<<<<<< HEAD
-    
-      <Navbar/>
-
-=======
 
       <Navbar />
       <SearchBar />
->>>>>>> upstream/main
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/collection' element={<Collection />} />
@@ -39,14 +30,12 @@ const App = () => {
         <Route path='/place-order' element={<PlaceOrder />} />
         <Route path='/orders' element={<Orders />} />
       </Routes>
-<<<<<<< HEAD
-=======
       <Footer />
->>>>>>> upstream/main
 
     </div>
   )
 }
 
 export default App
+
 
