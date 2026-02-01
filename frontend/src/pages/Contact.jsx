@@ -5,6 +5,7 @@ const Contact = () => {
 
   return (
     <div>
+      <h1>Contact Page</h1>
       
       <div className='text-center text-2xl pt-10 border-t'>
 <Title text1={'CONTACT'} text2={'US'} />
