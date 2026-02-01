@@ -6,9 +6,11 @@ const Footer = () => {
         <div>
             <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm '>
                 <div>
-                    <img src={assets.logo} className='mb-5 w-32' alt="" />
+                    <img src={assets.logo} className='mb-5 w-48 ' alt="" />
                     <p className='w-full md:w-2/3 text-gray-600'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex eaque voluptatibus minus. Autem sed ab quo libero, molestiae sint alias consequatur commodi!
+                        SustainaMart is your one-stop destination for eco-friendly fashion and lifestyle products.
+                        We believe in conscious living, ethical sourcing, and creating a greener future — one sustainable choice at a time.
+
                     </p>
                 </div>
                 <div>
@@ -23,16 +25,16 @@ const Footer = () => {
                 </div>
                 <div>
                     < p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
-                    <ul  className='flex flex-col gap-1 text-gray-600'>
-                        <li>8657575848</li>
-                        <li>meenakshi@gmail.com</li>
+                    <ul className='flex flex-col gap-1 text-gray-600'>
+                        <li>+91 98765 43210</li>
+                        <li>support@sustainamart.com</li>
 
                     </ul>
                 </div>
             </div>
             <div>
                 <hr />
-                <p className='py-5 text-sm text-center'>Copyright 2026@ SustainaMart.in - All Right Reserved.</p>
+                <p className='py-5 text-sm text-center'>Copyright 2026@ SustainaMart.com - All Right Reserved.</p>
             </div>
         </div>
     )
