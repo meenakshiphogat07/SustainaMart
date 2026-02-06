@@ -14,11 +14,7 @@ const NewsletterBox = () => {
       </p>
       <form  onSubmit={onSubmithandler} className='w-full sm:1/2 flex items-center gap-3 mx-auto my-6 border pl-3'>
         <input className='w-full sm:flex-1 outline-none' type="email" placeholder='Enter your email' required />
-<<<<<<< HEAD
         <button type='submit' className='bg-black text-white text-xs px-10 py-4'> SUBSCRIBE </button>
-=======
-        <button TYPE='submit' className='bg-black text-white text-xs px-10 py-4'> SUBSCRIBE </button>
->>>>>>> f05f3471c65141d7dc58a1c78ad16376254097c5
       </form>
     </div>
   )

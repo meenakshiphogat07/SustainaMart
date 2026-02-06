@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import Title from '../components/Title';
@@ -103,20 +102,8 @@ const Cart = () => {
         </div>
       </div>
 
-=======
-import React from 'react'
-
-const Cart = () => {
-  return (
-    <div>
-      
->>>>>>> f05f3471c65141d7dc58a1c78ad16376254097c5
     </div>
   )
 }
 
 export default Cart
-<<<<<<< HEAD
-
-=======
->>>>>>> f05f3471c65141d7dc58a1c78ad16376254097c5

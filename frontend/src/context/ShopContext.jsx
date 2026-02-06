@@ -1,17 +1,11 @@
-<<<<<<< HEAD
 import { createContext, useEffect, useState } from "react";
 import { products } from "../assets/assets"
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-=======
-import { createContext, useState } from "react";
-import { products } from "../assets/assets"
->>>>>>> f05f3471c65141d7dc58a1c78ad16376254097c5
 
 export const ShopContext = createContext();
 
 const ShopContextProvider = (props) => {
-<<<<<<< HEAD
     const currency = '₹';
     const delivery_fee = 10;
     const [search, setSearch] = useState('');
@@ -125,16 +119,6 @@ const ShopContextProvider = (props) => {
         addEcoPoints,
         useEcoPoints,
 
-=======
-    const currency='₹';
-    const deliver_fee=10;
-    const [search, setSearch]=useState('');
-    const[showSearch, setShowSearch]=useState(false)
-    
-    const value = {
-        products, currency, deliver_fee,
-        search,setSearch, showSearch, setShowSearch
->>>>>>> f05f3471c65141d7dc58a1c78ad16376254097c5
     }
 
     return (

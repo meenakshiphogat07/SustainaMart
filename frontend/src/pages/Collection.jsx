@@ -21,11 +21,7 @@ const Collection = () => {
     }
 
   }
-<<<<<<< HEAD
   const toggleSubCategory = (e) => {
-=======
-  const toggleSubCategory = () => {
->>>>>>> f05f3471c65141d7dc58a1c78ad16376254097c5
     if (subCategory.includes(e.target.value)) {
       setSubCategory(prev => prev.filter(item => item !== e.target.value))
     }
@@ -78,7 +74,6 @@ const Collection = () => {
         <div className={`border border-gray-300 pl-5 py-3 mt-6 ${showFilter ? '' : 'hidden'}`}>
           <p className='mb-3 text-sm font-medium'>CATEGORIES</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
-<<<<<<< HEAD
 
             <p className='flex gap-2'>
               <input className='w-3' type="checkbox" value={'Skincare & Beauty'} onChange={toggleCategory} />Skincare & Beauty
@@ -94,31 +89,6 @@ const Collection = () => {
             </p>
             <p className='flex gap-2'>
               <input className='w-3' type="checkbox" value={'Zero Waste Essentials'} onChange={toggleCategory} />Zero Waste Essentials
-=======
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Men'} onChange={toggleCategory} />Men
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Women'} onChange={toggleCategory} />Women
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Kids'} onChange={toggleCategory} />Kids
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Kids'} onChange={toggleCategory} />Skincare & Beauty
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Kids'} onChange={toggleCategory} />Personal Care & Hygiene
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Kids'} onChange={toggleCategory} />Clothing & Accessories
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Kids'} onChange={toggleCategory} />Home & Kitchen
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Kids'} onChange={toggleCategory} />Zero Waste Essentials
->>>>>>> f05f3471c65141d7dc58a1c78ad16376254097c5
             </p>
 
 
@@ -138,7 +108,6 @@ const Collection = () => {
               <input className='w-3' type="checkbox" value={'Winterwear'} onChange={toggleSubCategory} />Winterwear
             </p>
             <p className='flex gap-2'>
-<<<<<<< HEAD
               <input className='w-3' type="checkbox" value={'Face Care'} onChange={toggleSubCategory} />Face Care
             </p>
             <p className='flex gap-2'>
@@ -161,21 +130,6 @@ const Collection = () => {
             </p>
             <p className='flex gap-2'>
               <input className='w-3' type="checkbox" value={'Kids'} onChange={toggleCategory} />Kids
-=======
-              <input className='w-3' type="checkbox" value={'Winterwear'} onChange={toggleSubCategory} />Face Care
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Winterwear'} onChange={toggleSubCategory} />Body Care
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Winterwear'} onChange={toggleSubCategory} />Hair Care
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Winterwear'} onChange={toggleSubCategory} />Organic Cotton Clothing
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Winterwear'} onChange={toggleSubCategory} />Reusable Bags & Bottles
->>>>>>> f05f3471c65141d7dc58a1c78ad16376254097c5
             </p>
 
           </div>
@@ -196,11 +150,7 @@ const Collection = () => {
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6'>
           {
             filterProducts.map((item, index) => (
-<<<<<<< HEAD
               <ProductItem key={index} name={item.name} id={item._id} price={item.price} image={item.image} />
-=======
-              <ProductItem key={index} name={item.name} id={item.id} price={item.price} image={item.image} />
->>>>>>> f05f3471c65141d7dc58a1c78ad16376254097c5
             ))
 
           }

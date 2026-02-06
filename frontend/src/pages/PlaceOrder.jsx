@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useContext, useState } from 'react'
 import Title from '../components/Title'
 import CartTotal from '../components/CartTotal'
@@ -90,20 +89,8 @@ const PlaceOrder = () => {
           </div>
         </div>
       </div>
-=======
-import React from 'react'
-
-const PlaceOrder = () => {
-  return (
-    <div>
-      
->>>>>>> f05f3471c65141d7dc58a1c78ad16376254097c5
     </div>
   )
 }
 
 export default PlaceOrder
-<<<<<<< HEAD
-
-=======
->>>>>>> f05f3471c65141d7dc58a1c78ad16376254097c5
