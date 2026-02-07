@@ -12,20 +12,22 @@ const Cart = () => {
   const [applyPoints, setApplyPoints] = useState(false);
 
   useEffect(() => {
-    const tempData = [];
-    for (const items in cartItems) {
-      for (const item in cartItems[items]) {
-        if (cartItems[items][item] > 0) {
-          tempData.push({
-            _id: items,
-            size: item,
-            quantity: cartItems[items][item]
-          })
+    if (products.length > 0) {
+      const tempData = [];
+      for (const items in cartItems) {
+        for (const item in cartItems[items]) {
+          if (cartItems[items][item] > 0) {
+            tempData.push({
+              _id: items,
+              size: item,
+              quantity: cartItems[items][item]
+            })
+          }
         }
       }
+      setCartData(tempData);
     }
-    setCartData(tempData);
-  }, [cartItems])
+  }, [cartItems, products])
 
   return (
     <div className='border-t pt-14'>
@@ -56,16 +58,16 @@ const Cart = () => {
                   </div>
 
                 </div>
-                <input 
-                  onChange={(e) => e.target.value === '' || e.target.value === '0' ? null : updateQuantity(item._id, item.size, Number(e.target.value))} 
-                  className='border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1' 
-                  type="number" min={1} 
-                  defaultValue={item.quantity} 
+                <input
+                  onChange={(e) => e.target.value === '' || e.target.value === '0' ? null : updateQuantity(item._id, item.size, Number(e.target.value))}
+                  className='border max-w-10 sm:max-w-20 px-1 sm:px-2 py-1'
+                  type="number" min={1}
+                  defaultValue={item.quantity}
                 />
-                <img 
-                  onClick={() => updateQuantity(item._id, item.size, 0)} 
-                  className='w-4 mr-4 sm:w-5 cursor-pointer' 
-                  src={assets.bin_icon} alt="" 
+                <img
+                  onClick={() => updateQuantity(item._id, item.size, 0)}
+                  className='w-4 mr-4 sm:w-5 cursor-pointer'
+                  src={assets.bin_icon} alt=""
                 />
               </div>
             )
@@ -75,14 +77,14 @@ const Cart = () => {
 
       <div className='flex justify-end my-20'>
         <div className='w-full sm:w-[450px]'>
-          
+
           <CartTotal applyPoints={applyPoints} />
 
           <div className='flex items-center gap-2 mb-4 justify-end mt-2'>
-            <input 
-              type="checkbox" 
-              checked={applyPoints} 
-              onChange={() => setApplyPoints(!applyPoints)} 
+            <input
+              type="checkbox"
+              checked={applyPoints}
+              onChange={() => setApplyPoints(!applyPoints)}
               className="w-4 h-4"
             />
             <label className="text-sm text-green-700 font-medium">
@@ -91,8 +93,8 @@ const Cart = () => {
           </div>
 
           <div className='w-full text-end'>
-            <button 
-              onClick={() => navigate('/place-order')} 
+            <button
+              onClick={() => navigate('/place-order')}
               className='bg-black text-white text-sm my-8 px-8 py-3 hover:bg-gray-800 transition'
             >
               PROCEED TO CHECKOUT
