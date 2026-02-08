@@ -6,9 +6,9 @@ import express from 'express';
 
 
 const createToken = (id) => {
-    return jwt.sign({ id }, process)
-
+    return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '7d' })
 }
+
 
 //Route for user login
 const loginUser = async (req, res) => {
@@ -81,7 +81,6 @@ const registerUser = async (req, res) => {
         res.json({ success: true, token })
 
     } catch (error) {
-
         console.log(error);
         res.json({ success: false, message: error.message })
     }
@@ -89,24 +88,5 @@ const registerUser = async (req, res) => {
 
 }
 
-//Route for admin login
-const adminlogin = async (req, res) => {
-try{
-    const{email,password} = req.body
 
-    if (email === Process.env.ADMIN_EMAIL && password === process.env.ADMIN_PASSWORD){
-        const token = jwt.sign(email+password,process.env.JWT_SECRET);
-        res.json({success:true,token})
-    }else {
-        res.json({success:false,message:"INVALID CREDENTIALS"})
-    }
-}
-
-catch(error){
-    console.log(error);
-    res.json({success:false,message: error.message})
-}
-}
-
-
-export { loginUser, registerUser, adminlogin }
+export { loginUser, registerUser }

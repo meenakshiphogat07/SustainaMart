@@ -95,47 +95,6 @@ const Collection = () => {
           </div>
 
         </div>
-        <div className={`border border-gray-300 pl-5 py-3 my-5 ${showFilter ? '' : 'hidden'}`}>
-          <p className='mb-3 text-sm font-medium'>TYPE</p>
-          <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Topwear'} onChange={toggleSubCategory} />Topwear
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Bottomwear'} onChange={toggleSubCategory} />Bottomwear
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Winterwear'} onChange={toggleSubCategory} />Winterwear
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Face Care'} onChange={toggleSubCategory} />Face Care
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Body Care'} onChange={toggleSubCategory} />Body Care
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Hair Care'} onChange={toggleSubCategory} />Hair Care
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Organic Cotton Clothing'} onChange={toggleSubCategory} />Organic Cotton Clothing
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Reusable Bags & Bottles'} onChange={toggleSubCategory} />Reusable Bags & Bottles
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Men'} onChange={toggleCategory} />Men
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Women'} onChange={toggleCategory} />Women
-            </p>
-            <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Kids'} onChange={toggleCategory} />Kids
-            </p>
-
-          </div>
-
-
-        </div>
 
       </div>
       <div className='flex-1'>
