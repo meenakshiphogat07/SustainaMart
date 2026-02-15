@@ -14,7 +14,7 @@ const ShopContextProvider = (props) => {
     const [search, setSearch] = useState('');
     const [showSearch, setShowSearch] = useState(false);
     const [cartItems, setCartItems] = useState({});
-    const [products, setProducts] = useState(assetsProducts); 
+    const [products, setProducts] = useState(assetsProducts);
     const [token, setToken] = useState('');
 
     const [ecoPoints, setEcoPoints] = useState(
@@ -122,22 +122,6 @@ const ShopContextProvider = (props) => {
         return totalAmount;
     };
 
-    const getProductsData = async () => {
-        try {
-            const response = await axios.get(
-                backendUrl + '/api/product/list'
-            );
-            if (response.data.success) {
-                setProducts(response.data.product);
-            } else {
-                toast.error(response.data.message);
-            }
-        } catch (error) {
-            console.log(error);
-            toast.error(error.message);
-        }
-    };
-
     const getUserCart = async (token) => {
         try {
             const response = await axios.post(
@@ -153,10 +137,6 @@ const ShopContextProvider = (props) => {
             toast.error(error.message);
         }
     };
-
-    useEffect(() => {
-        getProductsData();
-    }, []);
 
     useEffect(() => {
         if (!token && localStorage.getItem('token')) {
